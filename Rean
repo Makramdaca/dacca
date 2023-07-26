@@ -857,7 +857,7 @@ end
 local mouse = lp:GetMouse()
 local fling = false
 mouse.Button1Down:Connect(function()
-fling = true
+fling = false
 end)
 
 mouse.Button1Up:Connect(function()
@@ -874,7 +874,7 @@ well = Instance.new("Weld", UselessPartLmao)
 well.Name = "Lois family guy"
 well.Part0 = UselessPartLmao
 well.Part1 = omgHuman
-well.C0 = cf(0, 12.5, 0)
+well.C0 = cf(0, 0, 0)
 well.C1 = cf(0, 0, 0)
 
 local function doForSignal(signal, vel)
