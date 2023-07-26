@@ -70,7 +70,7 @@ local discharscripts = true --disables all localScripts parented to your charact
 local R15toR6 = true --tries to convert your character to r6 if its r15
 local hatcollide = true --makes hats cancollide (only method 0)
 local humState16 = true --enables collisions for limbs before the humanoid dies (using hum:ChangeState)
-local addtools = false --puts all tools from backpack to character and lets you hold them after reanimation
+local addtools = true --puts all tools from backpack to character and lets you hold them after reanimation
 local hedafterneck = false --disable aligns for head and enable after neck is removed
 local loadtime = game:GetService("Players").RespawnTime + 0.5 --anti respawn delay
 local method = 0 --reanimation method
@@ -853,7 +853,7 @@ for i, v in pairs(handle1:GetDescendants()) do
         v.Enabled = false
     end
 end
---[[
+
 local mouse = lp:GetMouse()
 local fling = false
 mouse.Button1Down:Connect(function()
@@ -863,7 +863,7 @@ end)
 mouse.Button1Up:Connect(function()
     fling = false
 end)
-]]
+
 omgHuman = game.Players.LocalPlayer.Character.HumanoidRootPart
 UselessPartLmao = Instance.new("Part", omgHuman)
 UselessPartLmao.Name = "life fucking sucks and i wanna jump off a bridge"
